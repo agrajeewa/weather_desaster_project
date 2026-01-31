@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+
+<body>
+    <section>
+        <h2>Welcome Back</h2>
+        <div id="log">
+            <fieldset>
+                <legend>Login</legend>
+                <form method="post" action="login.php">
+                    <table style="height: auto;">
+                        <tr>
+                            <th><label for="name">Name</label></th>
+                            <td><input type="text" name="name" id="name" placeholder="enter your name" required /></td>
+                        </tr>
+                        <tr>
+                            <th><label for="password">Password</label></th>
+                            <td><input type="password" name="password" id="password"
+                                    onclick="pwd.type = this.cheked? 'text' : 'password'" required /></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="submit">
+                    <br><br> 
+                    <hr style="width: 50%; border: none; height: 2px; background-color:rgba(0, 0, 0, 0.589);">
+                    <br>
+                    <br>
+                    <center>
+                        <label style="text-decoration: solid;color: rgba(50, 58, 45, 0.637);">Log in as a guest</label>
+                        <a href="#">Guest Mode</a>
+                    </center>
+                    <br>
+                    <br>
+                    <label id="lgin">if you don't already have an account,
+                        <br>
+                        <a href="signup.html">signup here</a></label>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+</body>
+
+</html>

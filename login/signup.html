@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+
+<body>
+    <section>
+        <h2>Create Account</h2>
+        <fieldset>
+            <legend>Signup</legend>
+            <form method="post" action="create_acc.php">
+                <fieldset style="height: 250px;">
+                    <legend>For Login Details</legend>
+                    <table>
+                        <tr>
+                            <th><label for="user_name">User Name</label></th>
+                            <td><input type="text" name="user_name" id="user_name" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="password">Create Password</label></th>
+                            <td><input type="password" name="password"
+                                    onclick="pwd.type = this.cheked? 'text' : 'password'" required></td>
+                        </tr>
+                        <tr>
+                            <th><label for="password2">Conform Password</label></th>
+                            <td><input type="password" name="password2"
+                                    onclick="pwd.type = this.cheked? 'text' : 'password'" required></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>personal detais</legend>
+                    <table>
+                    <tr>
+                        <th><label for="fname">First Name</label></th>
+                        <td><input type="text" name="fname" id="fname" placeholder="Enter your first name" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="lname">Last Name</label></th>
+                        <td><input type="text" name="lname" id="lname" placeholder="Enter your last name" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">Email</label></th>
+                        <td><input type="email" name="email" id="email" placeholder="someone@gmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="tp_num">Phone Number</label></th>
+                        <td><input type="text" name="tp_num" id="tp_num" placeholder="enter your phone" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="address">Address</label></th>
+                        <td><textarea name="address" id="address" placeholder="enter your address" required></textarea>
+                        </td>
+                    </tr>
+                    </table>
+                </fieldset>
+        </fieldset>
+        <input type="submit" value="submit">
+             <br>
+                    <hr style="width: 50%; border: none; height: 2px; background-color:rgba(0, 0, 0, 0.589);">
+                    <br>
+        <br>
+        <label id="lgin">you already have an account, <a href="login.html">login here</a></label>
+        </form>
+        </fieldset>
+    </section>
+</body>
+
+</html>
